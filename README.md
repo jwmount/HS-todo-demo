@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Todo-demo Tutorial 
 
-Things you may want to cover:
+Scrtch Pad
 
-* Ruby version
+1.
+Issue:  somewhere around Chapter 9 code as is here stopes rendering to browser.
+Misc.  Seems to be related to using jQ wrapper, but this may be co-incidental.  Logs seem to without error codes until a SysErr 500 appears.  Running with 
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+In EditItem
+#	after_mount { jQ[dom_node].focus }   doesn't seem to work
+    jQ[dom_node].focus
