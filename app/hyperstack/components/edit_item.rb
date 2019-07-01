@@ -3,8 +3,7 @@ class EditItem < HyperComponent
 	fires :saved
 	fires :cancel
 	other :etc          # can be named anything
-#	after_mount { jQ[dom_node].focus }   doesn't seem to work
-    jQ[dom_node].focus
+	after_mount { jQ[dom_node].focus }
 
 	render do
 		INPUT(etc, placeholder: 'What is left to do today?',

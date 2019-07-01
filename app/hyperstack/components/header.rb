@@ -1,6 +1,6 @@
 class Header < HyperComponent
- #before_mount { @new_todo = Todo.new }
-  @new_todo = Todo.new
+  before_mount { @new_todo = Todo.new }
+  
   render(HEADER, class: :header) do
   	H1 { 'todos' }
     EditItem(class: 'new-todo', todo: @new_todo)
