@@ -1,3 +1,4 @@
+WARNING:  Changes to this file will not take effect until the server cache is cleared, use rm -rf tmp/cache and restart.
 Hyperstack.cancel_import 'react/react-source-browser' # bring your own React and ReactRouter via Yarn/Webpacker
 Hyperstack.import 'hyperstack/hotloader', client_only: true if Rails.env.development?
 
